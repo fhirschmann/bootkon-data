@@ -19,7 +19,7 @@ jobs:
     - name: Set up tar file
       run: |
         mkdir -p release
-        tar -czvf release/data.tar.gz bootkon-data jar
+        tar -czvf release/data.tar.gz bootkon-data/*
 
     - name: Create GitHub Release
       id: create_release
